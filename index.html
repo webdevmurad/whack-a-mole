@@ -4,13 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>whack-a-mole</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
-    <h1>Ударить крота</h1>
 
-    <h2>Твои счет:</h2>
+    <div class="game-menu">
+        <h1 class="game-menu__title">Ударить крота</h1>
+        <div class="select">
+            <select name="level" id="standard-select">
+                <option value="easy">Легкий</option>
+                <option value="medium">Средний</option>
+                <option value="hard">Тяжелый</option>
+            </select>
+        </div>
+        <button class="style-button game-start">Начать игру</button>
+    </div>
+    
+    <!-- <h1>Ударить крота</h1>
+
+    <h2>Твой счет:</h2>
     <h2 id="score">0</h2>
 
     <h2>Осталось секунд:</h2>
@@ -26,7 +40,7 @@
         <div class="square" id="7"></div>
         <div class="square" id="8"></div>
         <div class="square" id="9"></div>
-    </div>
-    <script src="./script.js"></script>
+    </div> -->
+    <!-- <script src="./script.js"></script> -->
 </body>
 </html>
