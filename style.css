@@ -65,11 +65,6 @@ body {
     background-size: contain;
 }
 
-
-
-
-
-
 select {
     appearance: none;
     background-color: transparent;
@@ -84,9 +79,11 @@ select {
     z-index: 1;
     outline: none;
 }
+
 select::-ms-expand {
     display: none;
 }
+
 .select {
     display: grid;
     grid-template-areas: "select";
@@ -104,9 +101,11 @@ select::-ms-expand {
     background-color: #fff;
     background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
 }
+
 .select select, .select::after {
     grid-area: select;
 }
+
 .select:not(.select--multiple)::after {
     content: "";
     justify-self: end;
@@ -115,6 +114,7 @@ select::-ms-expand {
     background-color: #777777;
     clip-path: polygon(100% 0%, 0 0%, 50% 100%);
 }
+
 select:focus + .focus {
     position: absolute;
     top: -1px;
@@ -124,28 +124,32 @@ select:focus + .focus {
     border: 2px solid var(--select-focus);
     border-radius: inherit;
 }
+
 select[multiple] {
     padding-right: 0;
    /* * Safari will not reveal an option * unless the select height has room to * show all of it * Firefox and Chrome allow showing * a partial option */
     height: 6rem;
 }
+
 select[multiple] option {
     white-space: normal;
     outline-color: var(--select-focus);
 }
+
 .select--disabled {
     cursor: not-allowed;
     background-color: #eee;
     background-image: linear-gradient(to top, #ddd, #eee 33%);
 }
+
 label {
     font-size: 1.125rem;
     font-weight: 500;
 }
+
 .select + label {
     margin-top: 2rem;
 }
-
 
 .game-content {
     display: none;
@@ -160,8 +164,6 @@ label {
 .game-content__score #score, .game-content__time #time-left {
     margin-left: 10px;
 }
-
-
 
 .game-record__table {
     width: 250px;
