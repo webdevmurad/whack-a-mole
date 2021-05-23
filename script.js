@@ -1,6 +1,7 @@
 const square = document.querySelectorAll('.square'),
     mole = document.querySelectorAll('.mole'),
-    timeLeft = document.querySelector('#time-left');
+    timeLeft = document.querySelector('#time-left'),
+    btnGame = document.querySelector('.newGame');
 
 let score = document.querySelector('#score');
 
